@@ -2,5 +2,12 @@
 layout: default
 ---
 
-<h3>{{ page.title }}</h3>
+<div class="clearfix">
+	<img src="{{ page.gambar }}" class="preview pull-left margin-right" alt="">
+	<div class="pull-left">
+		<p><strong>{{ page.title }}</strong></p>
+		<p>Oleh <span class="penulis">{{ page.penulis }}</span></p>
+	</div>
+</div>
+<br>
 {{ content }}
