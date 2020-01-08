@@ -7,7 +7,45 @@ layout: default
 	{% for x in postingan %}
 		<div class="col-xs-6 col-sm-4"><a href="{{ x.url | replace: '/', '' }}">
 			<p><img src="{{ x.gambar }}" alt=""></p>
-			<p><small>{{ x.title }}</small></p>
+			<p class="geser-dikit"><small>
+				<strong>{{ x.title }}</strong><br>
+				<span class="penulis">{{ x.penulis }}</span><br>
+				{% if x.bintang == 5 %}
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+				{% endif %}
+				{% if x.bintang == 4 %}
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star"></span>
+				{% endif %}
+				{% if x.bintang == 3 %}
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star"></span>
+					<span class="fa fa-star"></span>
+				{% endif %}
+				{% if x.bintang == 2 %}
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star"></span>
+					<span class="fa fa-star"></span>
+					<span class="fa fa-star"></span>
+				{% endif %}
+				{% if x.bintang == 1 %}
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star"></span>
+					<span class="fa fa-star"></span>
+					<span class="fa fa-star"></span>
+					<span class="fa fa-star"></span>
+				{% endif %}
+			</small></p>
 		</a></div>
 	{% endfor %}
 </div>

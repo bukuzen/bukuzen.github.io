@@ -11,8 +11,16 @@
 			word-wrap: break-word;
 		}
 
+		.hapus {
+			clear: both;
+		}
+
 		.fa-star.checked {
 			color: #ff9800;
+		}
+
+		.tanpa-kanan {
+			padding-right: 0;
 		}
 
 		.margin-right {
@@ -41,13 +49,14 @@
 			flex-wrap: wrap;
 		}
 
-		.list-buku [class*='col-'] {
+		.list-buku [class*='col-'],
+		.list-buku-item {
 			display: flex;
 			flex-direction: column;
 		}
 
 		.list-buku a {
-			text-align: center;
+			/*text-align: center;*/
 		}
 
 		.list-buku a,
@@ -57,6 +66,10 @@
 		.list-buku a:visited {
 			color: #000;
 			text-decoration: none;
+		}
+
+		.geser-dikit {
+			padding-left: 10px;
 		}
 	</style>
 </head>

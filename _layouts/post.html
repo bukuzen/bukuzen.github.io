@@ -2,17 +2,47 @@
 layout: default
 ---
 
-<div class="clearfix">
-	<img src="{{ page.gambar }}" class="preview pull-left margin-right" alt="">
-	<div class="pull-left">
+<div class="row">
+	<div class="col-xs-4 col-sm-3 tanpa-kanan">
+		<img src="{{ page.gambar }}" class="full" alt="">
+	</div>
+	<div class="col-xs-8 col-sm-8">
 		<p><strong>{{ page.title }}</strong></p>
 		<p>Oleh <span class="penulis">{{ page.penulis }}</span></p>
 		<p>
+			{% if page.bintang == 5 %}
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+			{% endif %}
 			{% if page.bintang == 4 %}
 				<span class="fa fa-star checked"></span>
 				<span class="fa fa-star checked"></span>
 				<span class="fa fa-star checked"></span>
 				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star"></span>
+			{% endif %}
+			{% if page.bintang == 3 %}
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star"></span>
+				<span class="fa fa-star"></span>
+			{% endif %}
+			{% if page.bintang == 2 %}
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star"></span>
+				<span class="fa fa-star"></span>
+				<span class="fa fa-star"></span>
+			{% endif %}
+			{% if page.bintang == 1 %}
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star"></span>
+				<span class="fa fa-star"></span>
+				<span class="fa fa-star"></span>
 				<span class="fa fa-star"></span>
 			{% endif %}
 		</p>
