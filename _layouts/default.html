@@ -1,13 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Buku Zen</title>
+	<title>{% if page.title %}{{ page.title }} - {% endif %}Buku Zen</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
 	<style>
+		* {
+			word-wrap: break-word;
+		}
+
 		body {
 			margin-top: 70px;
+		}
+
+		img {
+			max-width: 100%;
+		}
+
+		.list-buku {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.list-buku [class*='col-'] {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.list-buku a {
+			text-align: center;
+		}
+
+		.list-buku a,
+		.list-buku a:hover,
+		.list-buku a:active,
+		.list-buku a:focus,
+		.list-buku a:visited {
+			color: #000;
+			text-decoration: none;
 		}
 	</style>
 </head>
@@ -17,6 +48,8 @@
 			<div class="navbar-header"><a href="index.html" class="navbar-brand">Buku Zen</a></div>
 		</div>
 	</div>
-	{{ content }}
+	<div class="container">
+		{{ content }}
+	</div>
 </body>
 </html>

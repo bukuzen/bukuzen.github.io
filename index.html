@@ -1,3 +1,13 @@
 ---
 layout: default
 ---
+
+<div class="row list-buku">
+	{% assign postingan = site.posts | sort: 'title' %}
+	{% for x in postingan %}
+		<div class="col-xs-6 col-sm-4"><a href="{{ x.url | replace: '/', '' }}">
+			<p><img src="{{ x.gambar }}" alt=""></p>
+			<p><small>{{ x.title }}</small></p>
+		</a></div>
+	{% endfor %}
+</div>
