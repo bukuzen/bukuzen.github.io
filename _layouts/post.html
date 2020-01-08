@@ -7,6 +7,15 @@ layout: default
 	<div class="pull-left">
 		<p><strong>{{ page.title }}</strong></p>
 		<p>Oleh <span class="penulis">{{ page.penulis }}</span></p>
+		<p>
+			{% if page.bintang == 4 %}
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star checked"></span>
+				<span class="fa fa-star"></span>
+			{% endif %}
+		</p>
 	</div>
 </div>
 <br>
