@@ -1,7 +1,7 @@
 ---
 layout: post
 title: With Yo Kun
-gambar: https://media.karousell.com/media/photos/products/2019/04/21/with_yokun_1555820628_565466bd_progressive.jpg 
+gambar: https://telegra.ph/file/58017824fb19c4dca05cc.jpg
 penulis: Noa Kuroda
 bintang: 2
 ---
