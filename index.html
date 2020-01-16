@@ -6,7 +6,7 @@ layout: default
 	{% assign postingan = site.posts | sort: 'title' %}
 	{% for x in postingan %}
 		<div class="col-xs-6 col-sm-2"><a href="{{ x.url | replace: '/', '' }}">
-			<p><img src="{{ x.gambar }}" alt=""></p>
+			<p><img src="https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=500&url={{ x.gambar }}" alt=""></p>
 			<p class="geser-dikit"><small>
 				<strong>{{ x.title }}</strong><br>
 				<span class="penulis">{{ x.penulis }}</span><br>
