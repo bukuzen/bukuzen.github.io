@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Mitos Kecantikan
-gambar: https://2.bp.blogspot.com/-ZGfY5p4_hz8/UJ2_QOLNiVI/AAAAAAAAJZE/qAdpENe1lrE/s1600/mitos+kecantikan.jpg 
+gambar: https://telegra.ph/file/48ab7c233629da488766b.jpg
 penulis: Naomi Wolf
 bintang: 3
 ---
